@@ -8,36 +8,42 @@ Open your Flinders Okta Dashboard and select the VirtualApps Portal.
 From here, find the "Ubuntu Virtual Desktop" portal under "Desktops".
 This will open a version of the Linux operating system Ubuntu, complete with several applications:
 
+
+
 <img width="653" height="319" alt="image" src="https://github.com/user-attachments/assets/ccdae887-ff72-46e6-83e3-168df8bf6ba4" />
 
 
+We will use a command line interface to access and talk to DeepThought from your device.
+In Ubuntu Virtual Desktop, there is an application called JupyterLab Web, and one called Terminal. Both utilise a command line interface that we can use to connect to DeepThought.
+
+Although you can use either, I recommend JupyterLab Web, as the copy and paste functions in the terminal window are easier and more reliable across operating systems.
+
+Once you open JupyterLab Web, the launcher will have a "Terminal" option. Select this, and a command line terminal interface will open. You will see a flashing cursor next to your flinders FAN username.
+This is where we will connect to DeepThought using the secure shell (ssh) protocol. To connect, type ssh followed by YOURFAN@deepthought.flinders.edu.au, replacing YOURFAN with your Flinders FAN id.
+
+For example, if your FAN is smit0028, enter: ssh smit0028@deepthought.flinders.edu.au and then hit enter.
+
+You may be prompted to type "yes" to an agreement, followed by your password. Enter your password at the flashing cursor and hit enter (and recall, you won't be able to see your password being entered, but it is being detected).
 
 
-
-By default, when you log in, you will be placed in your **home directory**.  
-However, we recommend working in the **scratch directory** because it has more storage space.
 
 ---
 
-## Linking Scratch Directory in Jupyter File Browser
+## Locating and moving to your scratch directory on DeepThought
 
-Create a symbolic link in your home directory to your scratch directory to make it easier to navigate:
+By default, when you log in to Deepthought, you will be placed in your **home directory**.
+You can see this using the pwd (print working directory) command.
+However, we recommend working in the **scratch directory** because it has more storage space.
 
-```bash
-ln -s /scratch/user/$USER scratch
-```
-Now the scratch directory will appear in your Jupyter file browser.
-To undo/remove this link without deleting your actual scratch files, use:
+Using the cd (change directory) command, navigate to your **scratch directory**:
 
 ```bash
-rm scratch
+cd /scratch/user/$USER
 ```
-Note:
-This only deletes the symbolic link, not the original files.
+$USER is your FAN id
 
-To delete a file: rm file_name
+Now if you use pwd, you will see that you are in **scratch**.
 
-To delete a directory and its contents: rm -rf directory_name
 
 ## Exercise: Testing subsamp.py and count_and_qual.py
 
@@ -52,7 +58,7 @@ Alternatively, navigate in the Jupyter file browser to your scratch folder and c
 
 Step 2: Obtain the files uing Git
 
-The files are located on Github at https://github.com/N-falk/Bioinformatics_2025, and we will use the Git command to copy them to your scratch directory on Deepthought.
+The files are located on Github at https://github.com/N-falk/Bioinformatics_2026, and we will use the Git command to copy them to your scratch directory on Deepthought.
 
 Check if git is installed:
 
@@ -69,13 +75,13 @@ sudo apt install git
 Clone the repository containing the files:
 
 ```bash
-git clone https://github.com/N-falk/Bioinformatics_2025
+git clone https://github.com/N-falk/Bioinformatics_2026
 ```
 
 Step 3: Navigate to the fastq_fun directory and prepare files
 
 ```bash
-cd Bioinformatics_2025/fastq_fun
+cd Bioinformatics_2026/fastq_fun
 ls -lh
 gunzip *.fastq.gz
 ```
@@ -169,10 +175,10 @@ squeue --me
 
 ## FastQC and Fastp Exercises
 
-Navigate to the directory FastQC_fastp that's in Bioinformatics_2025. You can try this on your own or use the code below from wherever you are, replacing USER with your user FAN, and make sure you are in the correct relative path. Note that your file path structure may be different depending on where you've put things and what you've called them :)
+Navigate to the directory FastQC_fastp that's in Bioinformatics_2026. You can try this on your own or use the code below from wherever you are, replacing USER with your user FAN, and make sure you are in the correct relative path. Note that your file path structure may be different depending on where you've put things and what you've called them :)
 
 ```bash
-cd /scratch/user/USER/Bioinformatics_2025/FastQC_fastp
+cd /scratch/user/USER/Bioinformatics_2026/FastQC_fastp
 ```
 We will use conda to install and manage program installations. Conda is a package manager, and helps partition programs and installations and keeps them nice and tidy, without interference from other programs. Check the conda version that is (hopefully) installed on Deepthought:
 
