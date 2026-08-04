@@ -2,10 +2,17 @@
 
 ---
 
-## Logging into Deepthought via JupyterHub
+## Logging into DeepThought via Ubuntu Virtual Desktop 
 
-Open your browser and go to:  
-[http://deepteachweb.flinders.edu.au/jupyter](http://deepteachweb.flinders.edu.au/jupyter)
+Open your Flinders Okta Dashboard and select the VirtualApps Portal.
+From here, find the "Ubuntu Virtual Desktop" portal under "Desktops".
+This will open a version of the Linux operating system Ubuntu, complete with several applications:
+
+<img width="1000" height="489" alt="image" src="https://github.com/user-attachments/assets/f0c06cc8-ee79-4675-bc46-073570fc184b" />
+
+
+
+
 
 By default, when you log in, you will be placed in your **home directory**.  
 However, we recommend working in the **scratch directory** because it has more storage space.
