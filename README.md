@@ -8,7 +8,7 @@ Open your Flinders Okta Dashboard and select the VirtualApps Portal.
 From here, find the "Ubuntu Virtual Desktop" portal under "Desktops".
 This will open a version of the Linux operating system Ubuntu, complete with several applications:
 
-<img width="1000" height="489" alt="image" src="https://github.com/user-attachments/assets/f0c06cc8-ee79-4675-bc46-073570fc184b" />
+<img width="653" height="319" alt="image" src="https://github.com/user-attachments/assets/ccdae887-ff72-46e6-83e3-168df8bf6ba4" />
 
 
 
