@@ -177,6 +177,9 @@ Submit and monitor similarly:
 sbatch count_and_qual.slurm
 squeue --me
 ```
+In this scenario I have provided blank .slurm files for you. However, you can create your own .slurm files using the text editor nano, for example.
+(In this case, you can use the command "nano count_and_qual.slurm", which creates and opens an editable text file, from which you can copy and paste in the bash script. As before, 
+you can save nano files by typing "Ctrl+X", then "Y", then "Enter"). 
 
 ## FastQC and Fastp Exercises
 
