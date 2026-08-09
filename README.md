@@ -25,13 +25,14 @@ For example, if your FAN is smit0028, enter: ssh smit0028@deepthought.flinders.e
 
 You may be prompted to type "yes" to an agreement, followed by your password. Enter your password at the flashing cursor and hit enter (and recall, you won't be able to see your password being entered, but it is being detected).
 
-
+When first connected to DeepThought, you are interacting with the "head node".
+The head node acts as the central gateway where users log in to write scripts, compile code, and submit tasks to a job scheduler (i.e., slurm).
 
 ---
 
 ## Locating and moving to your scratch directory on DeepThought
 
-By default, when you log in to Deepthought, you will be placed in your **home directory**.
+By default, when you log in to DeepThought, you will be placed in your **home directory**.
 You can see this using the pwd (print working directory) command.
 However, we recommend working in the **scratch directory** because it has more storage space.
 
@@ -113,6 +114,8 @@ nano subsamp.py
 For better understanding, copy-paste the script contents into your preferred AI assistant and ask about each part of the code.
 
 Step 5: Run the Python scripts
+
+Python code can be run on the DeepThought headnode by typing "python" followed by the name of the .py script
 
 ```bash
 python count_and_qual.py
