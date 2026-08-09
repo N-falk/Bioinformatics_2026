@@ -118,8 +118,9 @@ Step 5: Run the Python scripts
 python count_and_qual.py
 python subsamp.py
 ```
+*The next section is an example of how to submit and run these python scripts as jobs on DeepThought using bash scripts and slurm.*
 
-It is more efficient for deepthought to make a bash script so that we can run these python codes as submitted jobs to dedicated nodes, and deepthought's slurm manager can take car ot it.
+It is more efficient for deepthought to make a bash script so that we can run these python codes as submitted jobs to dedicated nodes, and deepthought's slurm manager can take care of it.
 Open the file subsamp.slurm, and copy and paste in the following, starting with the line #!/bin/bash and ending with the line python subsamp.py:
 
 ```bash
@@ -137,7 +138,7 @@ Open the file subsamp.slurm, and copy and paste in the following, starting with 
 
 python subsamp.py
 ```
-Submit the job to Deepthought using the "sbatch" command:
+You could then submit the job to Deepthought using the "sbatch" command:
 
 ```bash
 sbatch subsamp.slurm
