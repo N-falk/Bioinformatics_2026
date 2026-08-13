@@ -100,6 +100,9 @@ Install Biopython (required by the Python scripts):
 pip install biopython
 ```
 
+There are several .txt files that contain python code we will use. To view these .txt files in command line, use 'less file_name.txt'
+To close the file, press 'q' (to quit).
+
 Convert .txt scripts to .py files for execution. You can view the .txt versions of the script, but let's make them .py files first.
 We will use the command line text editor "nano" to open a new file, copy and paste in some python code, then save it as a ".py" python script file:
 
