@@ -127,7 +127,7 @@ python subsamp.py
 *The next section is an example of how to submit and run these python scripts as jobs on DeepThought using bash scripts and slurm.*
 
 It is more efficient for deepthought to make a bash script so that we can run these python codes as submitted jobs to dedicated nodes, and deepthought's slurm manager can take care of it.
-Open the file subsamp.slurm, and copy and paste in the following, starting with the line #!/bin/bash and ending with the line python subsamp.py:
+Open the file subsamp.slurm using nano, and copy and paste in the following, starting with the line #!/bin/bash and ending with the line python subsamp.py:
 
 ```bash
 #!/bin/bash
