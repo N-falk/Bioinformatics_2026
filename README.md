@@ -46,7 +46,7 @@ $USER is your FAN id
 Now if you use pwd, you will see that you are in **scratch**.
 
 
-## Exercise: Testing subsamp.py and count_and_qual.py
+## Exercise 1: Testing subsamp.py and count_and_qual.py
 
 Step 1: Create a directory in your scratch for the test files
 
@@ -184,7 +184,7 @@ In this scenario I have provided blank .slurm files for you. However, you can cr
 (In this case, you can use the command "nano count_and_qual.slurm", which creates and opens an editable text file, from which you can copy and paste in the bash script. As before, 
 you can save nano files by typing "Ctrl+X", then "Y", then "Enter"). 
 
-## FastQC and Fastp Exercises
+## Exercise 2: FastQC and Fastp Exercises
 
 Navigate to the directory FastQC_fastp that's in Bioinformatics_2026. You can try this on your own or use the code below from wherever you are, replacing USER with your user FAN, and make sure you are in the correct relative path. Note that your file path structure may be different depending on where you've put things and what you've called them :)
 
