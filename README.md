@@ -189,7 +189,7 @@ you can save nano files by typing "Ctrl+X", then "Y", then "Enter").
 Navigate to the directory FastQC_fastp that's in Bioinformatics_2026. You can try this on your own or use the code below from wherever you are, replacing USER with your user FAN, and make sure you are in the correct relative path. Note that your file path structure may be different depending on where you've put things and what you've called them :)
 
 ```bash
-cd /scratch/user/USER/Bioinformatics_2026/FastQC_fastp
+cd /scratch/user/USER/directory_name/Bioinformatics_2026/FastQC_fastp
 ```
 We will use conda to install and manage program installations. Conda is a package manager, and helps partition programs and installations and keeps them nice and tidy, without interference from other programs. Check the conda version that is (hopefully) installed on Deepthought:
 
