@@ -292,7 +292,24 @@ Activate the fastqc_env environment again, and run fastqc on the file you just c
 ```bash
 fastqc -o ./ ./Sample1_fastp.fastq
 ```
-Compare the fastqc reports (the .html files) for before and after applying fastp filtering to Sample1; you'll notice that fastp also outputs a small report (the fastp.html file)
+Compare the fastqc reports (the .html files) for before and after applying fastp filtering to Sample1; you'll notice that fastp also outputs a small report (the fastp.html file).
+
+The generated .html file is a more user friendly output to view the fastq file parameters. You can use the following command to view the file in command line:
+
+```bash
+lynx filename.html
+```
+
+Running this code will open a text-like viewing file in command line where you can navigate with the arrow keys through the file. However, it is more intuitive to view the .html report file outside of command line.
+So we will save the .html file to your local space on the JupyterLab App and then view it from there. We will copy the file to your local computer using the "scp" (secure copy protocol) command, which is a common way to
+copy files from an HPC.
+
+Open a new terminal window in JupyterLab. Without logging in to DeepThought, use the following command to copy a file from your DeepThought location to your JupyterLab location:
+
+```bash
+scp USER@deepthought.flinders.edu.au:/scratch/user/USER/directory_name/Bioinformatics_2026/FastQC_fastp/Sample1_fastqc.html .
+```
+In this instance, replace USER with your FAN, and make sure the file path matches your location on DeepThought where the .html file is. The period (.) at the end of the command indicates that you want to copy the .html file to your current directory on JupyterLab, which is probably /home/ISD/USER. IF the scp command works, you should then see the .html file appear in your list of files in the left side window in JupyterLab (after refreshing). You can open the .html file now and see it in all its glory!
 
 ### Side Quest
 
