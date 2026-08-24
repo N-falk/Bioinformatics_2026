@@ -224,7 +224,7 @@ Activate the fastqc conda environment:
 ```bash
 conda activate fastqc_env
 ```
-You can see a list of all your conda environments by using conda env list
+You can see a list of all your conda environments by using 'conda env list'
 
 ### Install FastQC 
 
