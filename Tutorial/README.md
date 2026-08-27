@@ -470,7 +470,7 @@ We will use:
 
 The files required for the alignment exercise are available in the Assignment 1 directory of the course GitHub repository:
 
-https://github.com/N-falk/Bioinformatics_2025/tree/main/Assignment1
+https://github.com/N-falk/Bioinformatics_2025/tree/main/Tutorial
 
 If you have already cloned the Bioinformatics repository, navigate to the appropriate directory.
 
