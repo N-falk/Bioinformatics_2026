@@ -78,6 +78,7 @@ Download the dataset using `wget`:
 ```bash
 wget https://zenodo.org/record/1236641/files/test_fastq_small.zip
 ```
+If you get a response such as 'command not found', try running 'wget --version' to see if it's installed.
 
 You should now have a file called:
 
