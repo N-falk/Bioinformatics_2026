@@ -468,16 +468,10 @@ We will use:
 
 ### 11. Obtain the Assignment 1 files
 
-The files required for the alignment exercise are available in the Assignment 1 directory of the course GitHub repository:
-
-https://github.com/N-falk/Bioinformatics_2026/tree/main/Tutorial
-
-If you have already cloned the Bioinformatics repository, navigate to the appropriate directory.
-
-Alternatively, you can clone the repository again if necessary:
+The files required for the alignment exercise are available in the Assignment 1 directory of the 2025 course GitHub repository:
 
 ```bash
-git clone https://github.com/N-falk/Bioinformatics_2026
+git clone https://github.com/N-falk/Bioinformatics_2025
 ```
 
 Then navigate to the Assignment 1 directory:
@@ -499,6 +493,18 @@ to see the available files.
 ## 12. Install Minimap2
 
 Minimap2 is a sequence alignment program designed for mapping DNA or RNA sequences to reference sequences.
+
+Create a conda environment for minimap2 and activate it. 
+
+```bash
+conda create --name minimap2_env
+```
+
+Activate it:
+
+```bash
+conda activate minimap2_env
+```
 
 Download and extract Minimap2:
 
@@ -574,11 +580,11 @@ The `.mmi` file is an index of the reference sequence that Minimap2 can use to p
 
 ---
 
-### Question 5 — What is a reference genome?
+### — What is a reference genome?
 
 When aligning DNA sequences, what is the purpose of the **reference genome**?
 
-In your answer, consider why we need a known sequence to compare our sequencing reads against.
+Consider why we need a known sequence to compare our sequencing reads against.
 
 ---
 
@@ -663,9 +669,9 @@ This will provide information including:
 
 ---
 
-### Question 6 — SAM vs BAM
+### SAM vs BAM
 
-Briefly describe the difference between **SAM** and **BAM** file formats.
+Consider the difference between **SAM** and **BAM** file formats.
 
 Consider:
 
@@ -684,7 +690,7 @@ Using the output from:
 samtools flagstat merged.sorted.bam
 ```
 
-answer the following:
+Consider the the following:
 
 1. What percentage of reads from **Test01** mapped to the reference?
 2. What might this result indicate about the Test01 sample?
