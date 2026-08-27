@@ -1,4 +1,4 @@
-# Assignment 1: Merging, Quality Control, Filtering & Alignment
+# Tutorial: Merging, Quality Control, Filtering & Alignment
 
 In this tutorial, we will work through some of the basic steps involved in processing short-read sequencing data.
 
