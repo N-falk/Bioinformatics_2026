@@ -295,22 +295,6 @@ fastp_merge_report.json
 
 ---
 
-### Question 2 — What does this command do?
-
-Inspect the command above and explain what it does to the R1 and R2 FASTQ files.
-
-**2 marks**
-
-Consider:
-
-* What are the input files?
-* What does `--merge` do?
-* What is the purpose of `--merged_out`?
-* Why have adapter trimming and quality filtering been disabled?
-* What information might be contained in the HTML report?
-
----
-
 # Step 4: Quality Control After Merging
 
 We can now examine the merged sequences using FastQC.
