@@ -718,7 +718,7 @@ We will align these reads to the same reference genome.
 Run:
 
 ```bash
-minimap2 -ax sr ref.mmi ecoli_1K_2.fq.00.0_0.cor.fast.gz | samtools sort -o ecoli.sorted.bam
+minimap2 -ax sr ref.mmi ecoli_1K_2.fq.00.0_0.cor.fastq.gz | samtools sort -o ecoli.sorted.bam
 ```
 
 Then index the BAM file:
