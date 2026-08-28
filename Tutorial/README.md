@@ -569,7 +569,7 @@ reference.fasta
 Minimap2 can create an index using:
 
 ```bash
-./minimap2-2.31_x64-linuxminimap2 -d ref.mmi reference.fasta
+./minimap2-2.31_x64-linux/minimap2 -d ref.mmi reference.fasta
 ```
 
 This creates:
