@@ -510,13 +510,14 @@ conda activate minimap2_env
 Download and extract Minimap2:
 
 ```bash
-curl -L https://github.com/lh3/minimap2/releases/download/v2.30/minimap2-2.30_x64-linux.tar.bz2 | tar -jxvf -
+curl -L https://github.com/lh3/minimap2/releases/download/v2.31/minimap2-2.31_x64-linux.tar.bz2 | tar -jxvf -
+./minimap2-2.31_x64-linux/minimap2
 ```
 
 Test the installation:
 
 ```bash
-./minimap2-2.30_x64-linux/minimap2
+./minimap2-2.31_x64-linux/minimap2
 ```
 
 You should see information about Minimap2 and its available options.
@@ -568,7 +569,7 @@ reference.fasta
 Minimap2 can create an index using:
 
 ```bash
-minimap2 -d ref.mmi reference.fasta
+./minimap2-2.31_x64-linuxminimap2 -d ref.mmi reference.fasta
 ```
 
 This creates:
